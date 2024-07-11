@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .mb-10 {
@@ -580,14 +590,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -598,10 +600,6 @@ video {
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-10 {
@@ -715,16 +713,6 @@ video {
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .p-10 {
   padding: 2.5rem;
 }
@@ -737,16 +725,12 @@ video {
   padding: 6rem;
 }
 
-.p-32 {
-  padding: 8rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pl-32 {
@@ -757,8 +741,8 @@ video {
   padding-right: 8rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
@@ -910,10 +894,6 @@ video {
     display: none;
   }
 
-  .max-md\:p-3 {
-    padding: 0.75rem;
-  }
-
   .max-md\:p-1 {
     padding: 0.25rem;
   }
@@ -924,28 +904,16 @@ video {
     margin: 0px;
   }
 
-  .max-sm\:m-2 {
-    margin: 0.5rem;
-  }
-
   .max-sm\:m-4 {
     margin: 1rem;
-  }
-
-  .max-sm\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
-  .max-sm\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .max-sm\:mb-3 {
     margin-bottom: 0.75rem;
   }
 
-  .max-sm\:grid {
-    display: grid;
+  .max-sm\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .max-sm\:hidden {
@@ -964,22 +932,8 @@ video {
     flex-wrap: wrap-reverse;
   }
 
-  .max-sm\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .max-sm\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .max-sm\:space-x-1 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+  .max-sm\:p-1 {
+    padding: 0.25rem;
   }
 
   .max-sm\:p-2 {
@@ -990,37 +944,6 @@ video {
     padding: 1.25rem;
   }
 
-  .max-sm\:p-1 {
-    padding: 0.25rem;
-  }
-
-  .max-sm\:p-8 {
-    padding: 2rem;
-  }
-
-  .max-sm\:p-3 {
-    padding: 0.75rem;
-  }
-
-  .max-sm\:align-baseline {
-    vertical-align: baseline;
-  }
-
-  .max-sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .max-sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .max-sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .max-sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1029,17 +952,5 @@ video {
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
   }
 }

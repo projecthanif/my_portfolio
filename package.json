@@ -4,7 +4,7 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
