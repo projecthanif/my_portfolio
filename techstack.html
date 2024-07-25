@@ -17,10 +17,38 @@
     <nav
       class="flex flex-row justify-between text-[#e5e5e5] border-b-[1.5px] p-7 max-sm:p-5"
     >
-      <div class="ml-10 text-2xl capitalize md:mr-5">projecthanif</div>
+      <div class="ml-10 text-2xl capitalize md:mr-5 max-sm:ml-1">
+        projecthanif
+      </div>
       <ul class="flex space-x-8 mr-14 max-md:hidden max-sm:hidden">
         <li>
-          <a href="" class="hover:text-teal-300">Home</a>
+          <a href="index.html" class="hover:text-teal-300">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="hover:text-teal-300">About</a>
+        </li>
+        <li>
+          <a href="project.html" class="hover:text-teal-300">Projects</a>
+        </li>
+        <li>
+          <a href="techstack.html" class="hover:text-teal-300">TechStack</a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:text-teal-300">Contact</a>
+        </li>
+      </ul>
+      <div class="hidden max-sm:flex" id="menu">
+        <i class="bx bx-menu fa-2x"></i>
+      </div>
+      <ul
+        class="hidden w-full *:pt-3 bg-[#1f1f1f] absolute right-0 p-3 justify-center"
+        id="navbar"
+      >
+        <div class="hidden max-sm:flex" id="close">
+          <i class="text-red-700 bx bx-x fa-2x"></i>
+        </div>
+        <li>
+          <a href="index.html" class="hover:text-teal-300">Home</a>
         </li>
         <li>
           <a href="about.html" class="hover:text-teal-300">About</a>
@@ -37,11 +65,11 @@
       </ul>
     </nav>
     <main>
-      <section class="p-10 text-white">
+      <section class="p-10 mt-5 text-white max-sm:p-2">
         <div class="mb-5 text-center">
           <h1 class="font-mono text-3xl">My Tech Stack</h1>
         </div>
-        <div class="grid grid-cols-4 gap-3 space-y-5 sm:grid-cols-2">
+        <div class="grid grid-cols-4 gap-3 space-y-5 max-sm:grid-cols-3">
           <div class="flex flex-col text-center text-blue-700">
             <i class="fa-brands fa-php fa-3x"></i>
             <h4 class="text-xl">PHP</h4>
@@ -74,23 +102,21 @@
             <i class="fa-solid fa-database fa-3x"></i>
             <h4 class="text-xl">MYSQL</h4>
           </div>
-          <div class="ml-28">
-            <img
-              src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
-              alt="dart logo"
-              class="w-[20px]"
-            />
-            <!-- <i class="fa-solid fa-dart fa-3x"></i> -->
-            <h4 class="text-xl">Dart</h4>
+          <div class="flex flex-col text-center">
+            <i class="fa-brands fa-github fa-3x"></i>
+            <h4 class="text-xl">Github</h4>
           </div>
           <div class="flex flex-col text-center text-blue-400">
             <i class="bx bxl-flutter fa-3x"></i>
             <h4 class="text-xl">Flutter</h4>
           </div>
-
-          <div class="flex flex-col text-center">
-            <i class="fa-brands fa-github fa-3x"></i>
-            <h4 class="text-xl">Github</h4>
+          <div class="ml-28">
+            <img
+              src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
+              alt="dart logo"
+              class="w-[42px]"
+            />
+            <h4 class="text-xl">Dart</h4>
           </div>
           <!-- <i class="text-red-600 fa-brands fa-git-alt fa-3x"></i>
           <i class="text-blue-600 fa-brands fa-docker fa-3x"></i> -->
@@ -98,4 +124,5 @@
       </section>
     </main>
   </body>
+  <script src="./assets/js/app.js"></script>
 </html>
