@@ -64,6 +64,59 @@
         </li>
       </ul>
     </nav>
+    <main class="ma">
+      <section class="p-20 pl-40 pr-40 mt-28 max-md:p-3 max-sm:p-3">
+        <form>
+          <div class="flex flex-row justify-between w-full max-sm:flex-wrap">
+            <div class="flex flex-col">
+              <label for="name" class="mb-2 text-white">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id=""
+                class="w-[300px] p-3 border border-gray-300 rounded-2xl bg-slate-400 max-sm:w-[300px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="mb-2 text-white">Email</label>
+              <input
+                type="email"
+                name="email"
+                id=""
+                class="p-3 border border-gray-300 rounded-2xl w-[300px] bg-slate-400 max-sm:w-[300px]"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col mt-5">
+            <label for="subject" class="mb-2 text-white">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id=""
+              class="w-full p-3 border border-gray-300 rounded-2xl bg-slate-400"
+            />
+          </div>
+          <div class="flex flex-col mt-5">
+            <label for="message" class="mb-2 text-white">Message</label>
+            <textarea
+              name=""
+              id=""
+              name="message"
+              rows="10"
+              class="w-full p-3 border border-gray-300 rounded-2xl bg-slate-400"
+            ></textarea>
+          </div>
+          <div class="mt-10">
+            <button
+              type="submit"
+              class="p-3 text-white bg-green-400 border border-none rounded-lg"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
   <script src="./assets/js/app.js"></script>
 </html>
