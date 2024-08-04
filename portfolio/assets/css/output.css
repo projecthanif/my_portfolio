@@ -92,6 +92,9 @@ abbr:where([title]) {
           text-decoration: underline dotted;
 }
 
+.django-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
 /*
 Remove the default font size and weight for headings.
 */

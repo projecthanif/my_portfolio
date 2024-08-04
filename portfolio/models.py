@@ -16,7 +16,7 @@ class Expereince(models.Model):
         ('Part Time', 'Part Time'),
     ]
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(blank=True, null=True)
     company_name = models.CharField(max_length=255)
     type = models.CharField(max_length=100, choices=TYPE)
     start_date = models.DateField()

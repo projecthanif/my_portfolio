@@ -1,5 +1,10 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block content %}
+
+
     <main>
-      <section class="p-10 mt-5 text-white max-sm:p-2">
+      <section class="p-10 text-white">
         <div class="mb-5 text-center">
           <h1 class="font-mono text-3xl">My Tech Stack</h1>
         </div>
@@ -36,27 +41,23 @@
             <i class="fa-solid fa-database fa-3x"></i>
             <h4 class="text-xl">MYSQL</h4>
           </div>
+
           <div class="flex flex-col text-center">
             <i class="fa-brands fa-github fa-3x"></i>
             <h4 class="text-xl">Github</h4>
           </div>
-          <div class="flex flex-col text-center text-blue-400">
-            <i class="bx bxl-flutter fa-3x"></i>
-            <h4 class="text-xl">Flutter</h4>
+
+          <div class="flex flex-col text-center">
+            <i class="text-red-600 fa-brands fa-git-alt fa-3x"></i>
+            <h4 class="text-xl">Git</h4>
           </div>
-          <div class="ml-28">
-            <img
-              src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
-              alt="dart logo"
-              class="w-[42px]"
-            />
-            <h4 class="text-xl">Dart</h4>
+
+          <div class="flex flex-col text-center">
+            <i class="text-blue-600 fa-brands fa-docker fa-3x"></i>
+            <h4 class="text-xl">Docker</h4>
           </div>
-          <!-- <i class="text-red-600 fa-brands fa-git-alt fa-3x"></i>
-          <i class="text-blue-600 fa-brands fa-docker fa-3x"></i> -->
+
         </div>
       </section>
     </main>
-  </body>
-  <script src="./assets/js/app.js"></script>
-</html>
+{% endblock content %}
